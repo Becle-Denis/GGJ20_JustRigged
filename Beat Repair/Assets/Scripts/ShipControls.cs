@@ -30,37 +30,37 @@ public class ShipControls : MonoBehaviour
 
     void HandleEngine()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         { 
             transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.gameObject.SetActive(true);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.gameObject.SetActive(true);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.gameObject.SetActive(true);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             transform.GetChild(0).transform.GetChild(3).transform.GetChild(0).transform.gameObject.SetActive(true);
         }
 
 
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.W))
         {
             transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.gameObject.SetActive(false);
         }
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(KeyCode.D))
         {
             transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.gameObject.SetActive(false);
         }
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        if (Input.GetKeyUp(KeyCode.A))
         {
             transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.gameObject.SetActive(false);
         }
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (Input.GetKeyUp(KeyCode.S))
         {
             transform.GetChild(0).transform.GetChild(3).transform.GetChild(0).transform.gameObject.SetActive(false);
         }
