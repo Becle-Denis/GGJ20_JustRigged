@@ -8,48 +8,37 @@ public class PlayerMovement : MonoBehaviour
     public float hozizontalSpeed = 20f;
     public float jumpForce = 100f;
     public Rigidbody2D rigidbody;
-    public LayerMask layerMask;
-    private CapsuleCollider2D capsuleCollider;
+    public LayerMask groundLayer;
 
     private float horizontalnput = 0f;
     private float horizontalVelocity = 0f;
-    private int groundEnteringCollision = 0;
     private bool jump = false;
-    private bool onGround = false;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Ground")
-        {
-            groundEnteringCollision++;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Ground")
-        {
-            groundEnteringCollision--;
-        }
-    }
-
+    
+    
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        capsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontalnput = Input.GetAxisRaw("Horizontal");
+        horizontalnput = Input.GetAxisRaw("HorizontalPlayer");
         horizontalVelocity = horizontalnput * hozizontalSpeed;
         transform.position += Vector3.right * horizontalVelocity * Time.deltaTime;
-        onGround = groundEnteringCollision > 0;
-        if (Input.GetButton("Jump") && onGround)
+        if (Input.GetButton("Jump") && isOnGround())
         {
             jump = true;
         }
+    }
+
+    private bool isOnGround()
+    {
+        return Physics2D.OverlapArea(
+            new Vector2(transform.position.x, transform.position.y),
+            new Vector2(transform.position.x, transform.position.y - 0.2f),
+            groundLayer); ;
     }
 
     void FixedUpdate()
