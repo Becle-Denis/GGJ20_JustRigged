@@ -890,6 +890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 341723127}
   - component: {fileID: 341723128}
+  - component: {fileID: 341723129}
   m_Layer: 0
   m_Name: LeftTrigger
   m_TagString: Untagged
@@ -937,6 +938,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &341723129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341723126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c6057bf16ff244fac81738a7a89cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShipContainer: {fileID: 677168014}
+  ComponentID: 4
 --- !u!1 &387621186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667493481}
   - component: {fileID: 667493482}
+  - component: {fileID: 667493483}
   m_Layer: 0
   m_Name: BotTrigger
   m_TagString: Untagged
@@ -1688,6 +1704,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 0.6}
   m_EdgeRadius: 0
+--- !u!114 &667493483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667493480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c6057bf16ff244fac81738a7a89cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShipContainer: {fileID: 677168014}
+  ComponentID: 3
 --- !u!1001 &676738561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1772,6 +1802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677168015}
   - component: {fileID: 677168016}
+  - component: {fileID: 677168017}
   m_Layer: 0
   m_Name: ShipSprite
   m_TagString: Untagged
@@ -1811,6 +1842,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 20
   controllingShip: 1
+--- !u!114 &677168017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677168014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f31f3b56f734e4ba2f685a668baea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentComponent: 0
+  repairing: 0
+  repairAmount: 25
 --- !u!1001 &686909416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1958,7 +2004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &688441583
 Transform:
   m_ObjectHideFlags: 0
@@ -2088,6 +2134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 698880080}
   - component: {fileID: 698880081}
+  - component: {fileID: 698880082}
   m_Layer: 0
   m_Name: RightTrigger
   m_TagString: Untagged
@@ -2135,6 +2182,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &698880082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698880079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c6057bf16ff244fac81738a7a89cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShipContainer: {fileID: 677168014}
+  ComponentID: 2
 --- !u!4 &733007768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
@@ -2238,7 +2299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &765061666
 Transform:
   m_ObjectHideFlags: 0
@@ -2311,9 +2372,10 @@ GameObject:
   m_Component:
   - component: {fileID: 789086377}
   - component: {fileID: 789086378}
+  - component: {fileID: 789086379}
   m_Layer: 11
   m_Name: PlayerHitbox
-  m_TagString: ShipHitbox
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2325,7 +2387,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789086376}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2348,6 +2410,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.7
+--- !u!114 &789086379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789086376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50a2a2a9c820b64bae0e8aea2ebb9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShipContainer: {fileID: 677168014}
 --- !u!4 &834100618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
@@ -4354,9 +4429,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1940153870}
   - component: {fileID: 1940153871}
+  - component: {fileID: 1940153872}
   m_Layer: 0
   m_Name: TopTrigger
-  m_TagString: Untagged
+  m_TagString: ComponentHitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4401,6 +4477,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 0.6}
   m_EdgeRadius: 0
+--- !u!114 &1940153872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940153869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c6057bf16ff244fac81738a7a89cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShipContainer: {fileID: 677168014}
+  ComponentID: 1
 --- !u!1001 &1950655114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4623,11 +4713,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3439515820427374364, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3439515820427374354, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4683,46 +4768,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3439515820427374354, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439515820427374354, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 3439515820427374359, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
         type: 3}
-      propertyPath: jumpForce
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439515820427374359, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
-        type: 3}
-      propertyPath: hozizontalSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439515820427374359, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
-        type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439515820427374353, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439515820427374353, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439515820427374353, guid: cfbb3729ad3fdc540886ad6f4b921c3e,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: shipContainer
+      value: 
+      objectReference: {fileID: 677168014}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfbb3729ad3fdc540886ad6f4b921c3e, type: 3}
 --- !u!1 &2009167512

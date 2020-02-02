@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.087086126, g: 0.31759015, b: 0.9716981, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -597,6 +597,7 @@ GameObject:
   - component: {fileID: 456370683}
   - component: {fileID: 456370682}
   - component: {fileID: 456370681}
+  - component: {fileID: 456370684}
   m_Layer: 5
   m_Name: PlayPanel
   m_TagString: Untagged
@@ -746,6 +747,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_hoverClip: {fileID: 8300000, guid: e85fccc07e295be4f8885201525df4f4, type: 3}
   m_clickClip: {fileID: 8300000, guid: 519db88e9a9f61e499a26dd65cdba566, type: 3}
+--- !u!114 &456370684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456370679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10fe50bbc51aa404ba63b5938ffa8840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &468442425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,6 +2777,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 456370684}
+        m_MethodName: LoadAScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GoalSample
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1724183567

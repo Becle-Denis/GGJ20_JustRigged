@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayScreen.unity
     guid: 84fb75f8abb5dd645bd82b77eaad95b1
+  - enabled: 1
+    path: Assets/Scenes/GoalSample.unity
+    guid: 27c7903d39ecb9b419ecf62848bf06a5
   m_configObjects: {}

@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalnput = 0f;
     private float horizontalVelocity = 0f;
     private bool jump = false;
+    public GameObject shipContainer;
 
     
     
@@ -31,6 +32,15 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
         }
+        if (Input.GetKey(KeyCode.F))
+        {
+            shipContainer.GetComponent<ComponentHandler>().repairing = true;
+        }
+        else
+        {
+            shipContainer.GetComponent<ComponentHandler>().repairing = false;
+        }
+    
     }
 
     private bool isOnGround()
