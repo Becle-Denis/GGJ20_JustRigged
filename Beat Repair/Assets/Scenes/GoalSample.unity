@@ -726,94 +726,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21a98d976fcb59d458b6f86e2387fcce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFollow: {fileID: 1037247626}
+  objectToFollow: {fileID: 1957270151}
   camera: {fileID: 437908323}
-  cameraSize: 5
+  cameraSize: 8
 --- !u!4 &505508185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3462055320176149499, guid: a5660eaabc3feda4ab090fe66b6cd3eb,
     type: 3}
   m_PrefabInstance: {fileID: 351728752}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &528879275
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8938033822167074191, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074191, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938033822167074188, guid: a81b76d8ca1426249b7d4365d25cc76c,
-        type: 3}
-      propertyPath: spinningSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a81b76d8ca1426249b7d4365d25cc76c, type: 3}
 --- !u!1001 &591716551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1179,12 +1100,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a81b76d8ca1426249b7d4365d25cc76c, type: 3}
---- !u!4 &1037247626 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8938033822167074178, guid: a81b76d8ca1426249b7d4365d25cc76c,
-    type: 3}
-  m_PrefabInstance: {fileID: 528879275}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1072938338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2418,6 +2333,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.56
+--- !u!4 &1957270151 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6762163739813891523, guid: 0b24888f0fe4a094c93deebed219d7d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7098200515853391766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2034237256
 PrefabInstance:
   m_ObjectHideFlags: 0
