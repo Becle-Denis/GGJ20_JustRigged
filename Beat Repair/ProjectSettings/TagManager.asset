@@ -21,7 +21,7 @@ TagManager:
   - Asteroid
   - ShipHitbox
   - Player
-  - 
+  - Fires
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fires
+    uniqueID: 801267011
     locked: 0

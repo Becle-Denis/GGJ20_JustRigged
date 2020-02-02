@@ -21,6 +21,14 @@ public class ComponentHandler : MonoBehaviour
     public bool repairing = false;
     public float repairAmount = 25f;
 
+    public GameObject topflame;
+    public GameObject botflame;
+    public GameObject rightflame;
+    public GameObject leftflame;
+
+
+
+
     void Start()
     {
         
@@ -41,24 +49,28 @@ public class ComponentHandler : MonoBehaviour
         {
             brokenEngine = true;
             engineState = 0.0f;
+            topflame.SetActive(true);
             Debug.Log("BROKE ENGINE");
         }
         else if (!brokenRadar)
         {
             brokenRadar = true;
             radarState = 0.0f;
+            rightflame.SetActive(true);
             Debug.Log("BROKE RADARS");
         }
         else if(!brokenGun)
         {
             brokenGun = true;
             gunState = 0.0f;
+            botflame.SetActive(true);
             Debug.Log("BROKE GUN");
         }
         else if(!brokenCore)
         {
             brokenCore = true;
             coreState = 0.0f;
+            leftflame.SetActive(true);
             Debug.Log("BROKE cORE");
         }
         else
@@ -78,6 +90,8 @@ public class ComponentHandler : MonoBehaviour
                 {
                     brokenEngine = false;
                     engineState = 100.0f;
+                    topflame.SetActive(false);
+                    Debug.Log("Repaird Engine");
                 }
             }
             else if (currentComponent == 2 && brokenRadar)
@@ -87,6 +101,8 @@ public class ComponentHandler : MonoBehaviour
                 {
                     brokenRadar = false;
                     radarState = 100.0f;
+                    rightflame.SetActive(false);
+                    Debug.Log("Repaird Radar");
                 }
             }
             else if (currentComponent == 3 && brokenGun)
@@ -96,6 +112,8 @@ public class ComponentHandler : MonoBehaviour
                 {
                     brokenGun = false;
                     gunState = 100.0f;
+                    botflame.SetActive(false);
+                    Debug.Log("Repaird Gun");
                 }
             }
             else if (currentComponent == 4 && brokenCore)
@@ -105,6 +123,8 @@ public class ComponentHandler : MonoBehaviour
                 {
                     brokenCore = false;
                     coreState = 100.0f;
+                    leftflame.SetActive(false);
+                    Debug.Log("Repaird Core");
                 }
             }
         }
