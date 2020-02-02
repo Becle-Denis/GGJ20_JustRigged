@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeatRepair", "BeatRepair.csproj", "{92DB32DB-4921-11FB-E96E-03468F4F6D21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F332F463-4DAA-BC27-826F-97B20B7DF410}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{92DB32DB-4921-11FB-E96E-03468F4F6D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92DB32DB-4921-11FB-E96E-03468F4F6D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92DB32DB-4921-11FB-E96E-03468F4F6D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F332F463-4DAA-BC27-826F-97B20B7DF410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F332F463-4DAA-BC27-826F-97B20B7DF410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F332F463-4DAA-BC27-826F-97B20B7DF410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F332F463-4DAA-BC27-826F-97B20B7DF410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
