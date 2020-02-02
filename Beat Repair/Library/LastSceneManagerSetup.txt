@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/PlayScreen.unity
+=======
+- path: Assets/Scenes/GoalSample.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1
