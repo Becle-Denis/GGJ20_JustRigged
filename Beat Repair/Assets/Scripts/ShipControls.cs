@@ -68,4 +68,14 @@ public class ShipControls : MonoBehaviour
 
     }
 
+    public void Restart()
+    {
+        transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.gameObject.SetActive(false);
+
+        transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).transform.gameObject.SetActive(false);
+        transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).transform.gameObject.SetActive(false);
+
+        transform.GetChild(0).transform.GetChild(3).transform.GetChild(0).transform.gameObject.SetActive(false);
+    }
+
 }

@@ -2640,6 +2640,7 @@ GameObject:
   - component: {fileID: 4754332999241559281}
   - component: {fileID: 4754332999241559278}
   - component: {fileID: 4754332999241559279}
+  - component: {fileID: 114258559574738890}
   m_Layer: 0
   m_Name: ShipSprite
   m_TagString: Untagged
@@ -2699,6 +2700,19 @@ MonoBehaviour:
   botflame: {fileID: 4754332998825466958}
   rightflame: {fileID: 4754332998460822426}
   leftflame: {fileID: 4754332997952498475}
+--- !u!114 &114258559574738890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4754332999241559280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1711ceda75ea94e8cdf1eb5a8117c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  first: 1
 --- !u!1 &4754332999261204438
 GameObject:
   m_ObjectHideFlags: 0

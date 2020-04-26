@@ -1,12 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ComponentHandler : MonoBehaviour
 {
-
-
 
     private float engineState = 100.0f;
     private float radarState = 100.0f;
@@ -75,7 +72,7 @@ public class ComponentHandler : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("MainMenu" , LoadSceneMode.Single);
+            FindObjectOfType<Manager>().RestartScene();
         }
     }
 
@@ -135,5 +132,24 @@ public class ComponentHandler : MonoBehaviour
         currentComponent = t_int;
     }
 
+    public void Restart()
+    {
+        engineState = 100.0f;
+        radarState = 100.0f;
+        gunState = 100.0f;
+        coreState = 100.0f;
+
+        brokenEngine = false;
+        brokenRadar = false;
+        brokenGun = false;
+        brokenCore = false;
+        currentComponent = 0; //1 Engine, 2 Radar, 3 Gun, 4 Core
+        repairing = false;
+
+        topflame.SetActive(false);
+        botflame.SetActive(false);
+        leftflame.SetActive(false);
+        rightflame.SetActive(false);
+    }
 
 }

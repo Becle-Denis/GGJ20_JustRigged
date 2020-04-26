@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3439515820427374353}
   - component: {fileID: 3439515820427374352}
   - component: {fileID: 3439515820427374359}
+  - component: {fileID: 114799207540071716}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
@@ -137,3 +138,17 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  shipContainer: {fileID: 0}
+--- !u!114 &114799207540071716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3439515820427374364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1711ceda75ea94e8cdf1eb5a8117c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  first: 0
