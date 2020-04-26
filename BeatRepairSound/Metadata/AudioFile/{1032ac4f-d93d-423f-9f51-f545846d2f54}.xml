@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{1032ac4f-d93d-423f-9f51-f545846d2f54}">
+		<property name="assetPath">
+			<value>Fixing1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.0429791666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e7ac1421-5ed3-4e2f-9e5c-82985763fc64}</destination>
+		</relationship>
+	</object>
+</objects>

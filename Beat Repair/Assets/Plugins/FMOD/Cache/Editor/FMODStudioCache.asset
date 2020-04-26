@@ -14,17 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114853161639740232}
-  - {fileID: 114647003776554800}
+  - {fileID: 114573652783326846}
   EditorEvents:
   - {fileID: 114593165601877366}
   - {fileID: 114546192391351380}
   - {fileID: 114978992083598748}
+  - {fileID: 114987909005739296}
+  - {fileID: 114498078697040580}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114647003776554800}
+  - {fileID: 114573652783326846}
   StringsBanks:
   - {fileID: 114853161639740232}
-  stringsBankWriteTime: 637235161204299006
+  stringsBankWriteTime: 637235187482399142
   cacheVersion: 3
 --- !u!114 &114465867185511264
 MonoBehaviour:
@@ -44,6 +46,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &114498078697040580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fixing
+  m_EditorClassIdentifier: 
+  Path: event:/Fixing
+  guid: f4e61bc3bf0a4943ba32d08e9b828882
+  Banks:
+  - {fileID: 114573652783326846}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1042
 --- !u!114 &114546192391351380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +84,7 @@ MonoBehaviour:
   Path: event:/Impact
   guid: 5547966b7b995747a98b8926bbba68ed
   Banks:
-  - {fileID: 114647003776554800}
+  - {fileID: 114573652783326846}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -67,6 +92,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 200
+--- !u!114 &114573652783326846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../BeatRepairSound/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235187482309315
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114593165601877366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +125,7 @@ MonoBehaviour:
   Path: event:/Fire
   guid: 02998da205ac2d4d98202fde18a91cdb
   Banks:
-  - {fileID: 114647003776554800}
+  - {fileID: 114573652783326846}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -107,6 +150,24 @@ MonoBehaviour:
   lastModified: 637235161204189326
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &114756734244741318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../BeatRepairSound/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235177877835521
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &114853161639740232
 MonoBehaviour:
@@ -122,11 +183,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../BeatRepairSound/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637235161204299006
+  lastModified: 637235187482399142
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 888
+    Value: 984
   Exists: 1
 --- !u!114 &114978992083598748
 MonoBehaviour:
@@ -143,7 +204,7 @@ MonoBehaviour:
   Path: event:/MainMusic
   guid: b2f714ed56fab545bb68e5325bd71028
   Banks:
-  - {fileID: 114647003776554800}
+  - {fileID: 114573652783326846}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -151,3 +212,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 180148
+--- !u!114 &114987909005739296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Moving
+  m_EditorClassIdentifier: 
+  Path: event:/Moving
+  guid: c688a5a1c25f92448fabc7f656610846
+  Banks:
+  - {fileID: 114573652783326846}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7000
