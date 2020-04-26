@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114853161639740232}
-  - {fileID: 114465867185511264}
+  - {fileID: 114647003776554800}
   EditorEvents:
   - {fileID: 114593165601877366}
   - {fileID: 114546192391351380}
   - {fileID: 114978992083598748}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114465867185511264}
+  - {fileID: 114647003776554800}
   StringsBanks:
   - {fileID: 114853161639740232}
-  stringsBankWriteTime: 637234303425849613
+  stringsBankWriteTime: 637235161204299006
   cacheVersion: 3
 --- !u!114 &114465867185511264
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
   lastModified: 637234303425650120
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &114546192391351380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,14 +59,14 @@ MonoBehaviour:
   Path: event:/Impact
   guid: 5547966b7b995747a98b8926bbba68ed
   Banks:
-  - {fileID: 114465867185511264}
+  - {fileID: 114647003776554800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2062
+  Length: 200
 --- !u!114 &114593165601877366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   Path: event:/Fire
   guid: 02998da205ac2d4d98202fde18a91cdb
   Banks:
-  - {fileID: 114465867185511264}
+  - {fileID: 114647003776554800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -90,6 +90,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6500
+--- !u!114 &114647003776554800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../BeatRepairSound/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235161204189326
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114853161639740232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,11 +122,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../BeatRepairSound/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637234303425849613
+  lastModified: 637235161204299006
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 818
+    Value: 888
   Exists: 1
 --- !u!114 &114978992083598748
 MonoBehaviour:
@@ -125,7 +143,7 @@ MonoBehaviour:
   Path: event:/MainMusic
   guid: b2f714ed56fab545bb68e5325bd71028
   Banks:
-  - {fileID: 114465867185511264}
+  - {fileID: 114647003776554800}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0

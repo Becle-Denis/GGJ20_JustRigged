@@ -16,9 +16,9 @@ public class CollisionHandlerShip : MonoBehaviour
         
         if (col.gameObject.layer == 10)
         {
-            
-            ShipContainer.GetComponent<ComponentHandler>().breakComponent();
             col.gameObject.SetActive(false);
+            ShipContainer.GetComponent<ComponentHandler>().breakComponent();
+            
         }
 
     }
